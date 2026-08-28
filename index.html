@@ -1,163 +1,171 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CodeCraft – Master Code</title>
     <!-- Font Awesome (icons only) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
     <!-- External CSS -->
     <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-
+  </head>
+  <body>
     <!-- ========== HEADER (shared) ========== -->
     <header>
-        <div class="logo">CodeCraft</div>
+      <div class="logo">CodeCraft</div>
 
-        <!-- CSS-only burger menu checkbox -->
-        <input type="checkbox" id="nav-toggle" class="nav-toggle" />
-        <label for="nav-toggle" class="nav-toggle-label">
-            <i class="fas fa-bars"></i>
-        </label>
+      <!-- CSS-only burger menu checkbox -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+      <label for="nav-toggle" class="nav-toggle-label">
+        <i class="fas fa-bars"></i>
+      </label>
 
-        <nav class="nav-links">
-            <a href="index.html" class="active">Home</a>
-            <a href="courses.html">Courses</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+      <nav class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
     </header>
 
     <main>
-        <!-- ===== HERO ===== -->
-        <section class="hero">
-            <div class="hero-text">
-                <h1>Master Code. <br />Build Real Projects.</h1>
+      <!-- ===== HERO ===== -->
+      <section class="hero">
+        <div class="hero-text">
+          <h1>Master Code. <br />Build Real Projects.</h1>
+          <p>
+            Join thousands of students and launch your career in tech with our
+            project-based coding bootcamp.
+          </p>
+          <a href="courses.html" class="btn btn-primary">Start Free Trial</a>
+        </div>
+        <div class="hero-image">
+          <picture>
+            <source
+              media="(min-width: 1200px)"
+              srcset="https://picsum.photos/seed/code-hero/800/500?random=1"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="https://picsum.photos/seed/code-hero/600/450?random=1"
+            />
+            <img
+              src="https://picsum.photos/seed/code-hero/400/350?random=1"
+              alt="Students collaborating on code"
+              loading="lazy"
+            />
+          </picture>
+        </div>
+      </section>
+
+      <!-- ===== INFO CARDS ===== -->
+      <section class="info-cards">
+        <h2>What You'll Learn</h2>
+        <div class="cards-grid">
+          <article class="card">
+            <figure>
+              <!-- UPDATED: Web Development -->
+              <img
+                src="images/Web Development.jpg"
+                alt="Web Development"
+                loading="lazy"
+              />
+              <figcaption>
+                <h3>Web Development</h3>
                 <p>
-                    Join thousands of students and launch your career in tech with
-                    our project-based coding bootcamp.
+                  Build full‑stack apps with HTML, CSS, JavaScript, and React.
                 </p>
-                <a href="courses.html" class="btn btn-primary">Start Free Trial</a>
-            </div>
-            <div class="hero-image">
-                <picture>
-                    <source
-                        media="(min-width: 1200px)"
-                        srcset="https://picsum.photos/seed/code-hero/800/500?random=1"
-                    />
-                    <source
-                        media="(min-width: 768px)"
-                        srcset="https://picsum.photos/seed/code-hero/600/450?random=1"
-                    />
-                    <img
-                        src="https://picsum.photos/seed/code-hero/400/350?random=1"
-                        alt="Students collaborating on code"
-                        loading="lazy"
-                    />
-                </picture>
-            </div>
-        </section>
+              </figcaption>
+            </figure>
+          </article>
 
-        <!-- ===== INFO CARDS ===== -->
-        <section class="info-cards">
-            <h2>What You'll Learn</h2>
-            <div class="cards-grid">
-                <article class="card">
-                    <figure>
-                        <!-- UPDATED: Web Development -->
-                        <img
-                            src="images/Web Development.jpg"
-                            alt="Web Development"
-                            loading="lazy"
-                        />
-                        <figcaption>
-                            <h3>Web Development</h3>
-                            <p>Build full‑stack apps with HTML, CSS, JavaScript, and React.</p>
-                        </figcaption>
-                    </figure>
-                </article>
+          <article class="card">
+            <figure>
+              <!-- UPDATED: Data Science -->
+              <img
+                src="images/Data Science.jpg"
+                alt="Data Science"
+                loading="lazy"
+              />
+              <figcaption>
+                <h3>Data Science</h3>
+                <p>Analyse data with Python, Pandas, and machine learning.</p>
+              </figcaption>
+            </figure>
+          </article>
 
-                <article class="card">
-                    <figure>
-                        <!-- UPDATED: Data Science -->
-                        <img
-                            src="images/Data Science.jpg"
-                            alt="Data Science"
-                            loading="lazy"
-                        />
-                        <figcaption>
-                            <h3>Data Science</h3>
-                            <p>Analyse data with Python, Pandas, and machine learning.</p>
-                        </figcaption>
-                    </figure>
-                </article>
-
-                <article class="card">
-                    <figure>
-                        <!-- UPDATED: UX/UI Design -->
-                        <img
-                            src="images/UX UI Design.avif"
-                            alt="UX/UI Design"
-                            loading="lazy"
-                        />
-                        <figcaption>
-                            <h3>UX/UI Design</h3>
-                            <p>Create beautiful, user‑friendly interfaces with Figma and design principles.</p>
-                        </figcaption>
-                    </figure>
-                </article>
-
-                <article class="card">
-                    <figure>
-                        <!-- UPDATED: Mobile Apps -->
-                        <img
-                            src="images/Mobile Apps.jpg"
-                            alt="Mobile Apps"
-                            loading="lazy"
-                        />
-                        <figcaption>
-                            <h3>Mobile Apps</h3>
-                            <p>Develop iOS and Android apps using React Native.</p>
-                        </figcaption>
-                    </figure>
-                </article>
-            </div>
-        </section>
-
-        <!-- ===== QUOTE ===== -->
-        <section class="quote">
-            <blockquote>
+          <article class="card">
+            <figure>
+              <!-- UPDATED: UX/UI Design -->
+              <img
+                src="images/UX UI Design.avif"
+                alt="UX/UI Design"
+                loading="lazy"
+              />
+              <figcaption>
+                <h3>UX/UI Design</h3>
                 <p>
-                    “CodeCraft transformed my career. I went from zero coding
-                    experience to landing my dream job in just <strong>6 months</strong>!”
+                  Create beautiful, user‑friendly interfaces with Figma and
+                  design principles.
                 </p>
-                <cite>— Sarah J., Software Engineer</cite>
-            </blockquote>
-        </section>
+              </figcaption>
+            </figure>
+          </article>
 
-        <!-- ===== CALL TO ACTION ===== -->
-        <section class="cta">
-            <div class="cta-box">
-                <div class="cta-text">
-                    <h3>Ready to start your coding journey?</h3>
-                    <p>Join thousands of students who already launched their careers.</p>
-                </div>
-                <a href="courses.html" class="btn btn-secondary">Enroll Now</a>
-            </div>
-        </section>
+          <article class="card">
+            <figure>
+              <!-- UPDATED: Mobile Apps -->
+              <img
+                src="images/Mobile Apps.jpg"
+                alt="Mobile Apps"
+                loading="lazy"
+              />
+              <figcaption>
+                <h3>Mobile Apps</h3>
+                <p>Develop iOS and Android apps using React Native.</p>
+              </figcaption>
+            </figure>
+          </article>
+        </div>
+      </section>
+
+      <!-- ===== QUOTE ===== -->
+      <section class="quote">
+        <blockquote>
+          <p>
+            “CodeCraft transformed my career. I went from zero coding experience
+            to landing my dream job in just <strong>6 months</strong>!”
+          </p>
+          <cite>— Sarah J., Software Engineer</cite>
+        </blockquote>
+      </section>
+
+      <!-- ===== CALL TO ACTION ===== -->
+      <section class="cta">
+        <div class="cta-box">
+          <div class="cta-text">
+            <h3>Ready to start your coding journey?</h3>
+            <p>
+              Join thousands of students who already launched their careers.
+            </p>
+          </div>
+          <a href="courses.html" class="btn btn-secondary">Enroll Now</a>
+        </div>
+      </section>
     </main>
 
     <!-- ========== FOOTER (shared) ========== -->
     <footer>
-        <p>&copy; 2026 CodeCraft. All rights reserved.</p>
-        <div class="social-icons">
-            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-            <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
-            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-        </div>
+      <p>&copy; 2026 CodeCraft. All rights reserved.</p>
+      <div class="social-icons">
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+      </div>
     </footer>
-
-</body>
+  </body>
 </html>
