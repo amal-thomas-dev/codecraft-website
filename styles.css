@@ -1,7 +1,7 @@
 /* ============================================
    IMPORTS & VARIABLES
    ============================================ */
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,300&display=swap');
 
 :root {
   --dark-bg: #1f2937;
@@ -12,7 +12,7 @@
   --info-header: #1f2937;
   --quote-bg: #e5e7eb;
   --quote-text: #1f2937;
-  --font-roboto: "Roboto", sans-serif;
+  --font-roboto: 'Roboto', sans-serif;
 }
 
 /* ============================================
@@ -216,7 +216,7 @@ header {
 .card {
   flex: 1 1 200px;
   max-width: 240px;
-  border: 2px solid var(--hero-secondary);
+  border: 2px solid var(--button-color);
   border-radius: 12px;
   padding: 1rem;
   background: #fff;
@@ -262,7 +262,9 @@ header {
 
 .quote blockquote {
   max-width: 850px;
-  text-align: center;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
 }
 
 .quote blockquote p {
@@ -279,6 +281,8 @@ header {
   font-weight: 700;
   font-style: normal;
   color: var(--dark-bg);
+  align-self: flex-end;
+  margin-right: 4rem;
 }
 
 /* ============================================
