@@ -149,7 +149,7 @@ body > header {
    ============================================ */
 .hero {
   background: var(--dark-bg);
-  padding: 80px 2rem 4rem; /* <-- changed from 4rem 2rem to 80px top */
+  padding: 80px 2rem 4rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -912,10 +912,6 @@ footer .social-icons a:hover {
     margin-right: auto;
   }
 
-  .hero-image {
-    width: 100%;
-  }
-
   /* --- cards --- */
   .cards-grid {
     gap: 1.5rem;
@@ -951,28 +947,97 @@ footer .social-icons a:hover {
   /* --- courses --- */
   .course-card {
     flex-direction: column;
+    max-width: 100%;
+    overflow: hidden;
   }
-
+  .course-image {
+    flex: none;
+    max-height: 200px;
+    width: 100%;
+    overflow: hidden;
+  }
+  .course-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+  }
+  .course-info {
+    flex: 1 1 auto;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  .course-info h2 {
+    font-size: 22px;
+  }
+  .course-info p {
+    font-size: 16px;
+  }
+  .course-info ul {
+    gap: 1rem;
+    font-size: 15px;
+  }
   .course-info .btn {
     align-self: stretch;
     text-align: center;
+    margin-top: auto;
+    padding: 0.8rem 1rem;
   }
 
-  /* --- mission --- */
+  /* --- about: mission --- */
   .mission {
     flex-direction: column;
     text-align: center;
+    padding: 2rem 1.5rem;
+    gap: 1.5rem;
+  }
+  .mission-image {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .mission-image img {
+    max-height: 300px;
+    object-fit: cover;
+  }
+
+  /* --- about: team --- */
+  .team {
+    padding: 2.5rem 1.5rem;
+  }
+  .team h2 {
+    margin-bottom: 2rem;
+  }
+  .team-member img {
+    width: 100px;
+    height: 100px;
+  }
+  .team-member {
+    padding: 1rem;
   }
 
   /* --- contact --- */
   .contact-form-section {
     flex-direction: column;
     gap: 2rem;
+    padding: 2rem 1.5rem;
   }
-
+  .contact-info {
+    text-align: center;
+    padding: 0;
+  }
+  .contact-info p {
+    justify-content: center;
+  }
   .contact-form .btn {
     align-self: stretch;
     text-align: center;
+  }
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 15px;
+    padding: 0.7rem 1rem;
   }
 
   /* --- pricing --- */
@@ -989,8 +1054,22 @@ footer .social-icons a:hover {
     max-width: 100%;
   }
 
+  /* --- page hero --- */
+  .page-hero {
+    padding: 60px 2rem 2.5rem;
+  }
   .page-hero h1 {
     font-size: 32px;
+  }
+
+  /* --- FIX: reset flex-basis for stacked elements --- */
+  .hero-text,
+  .hero-image,
+  .mission-text,
+  .mission-image,
+  .contact-info {
+    flex: none;
+    width: 100%;
   }
 }
 
@@ -1033,17 +1112,70 @@ footer .social-icons a:hover {
     font-size: 20px;
   }
 
+  .course-info {
+    padding: 1rem;
+  }
   .course-info h2 {
     font-size: 22px;
   }
 
+  .course-info p {
+    font-size: 15px;
+  }
+  .course-image {
+    max-height: 200px;
+  }
+
+  .mission {
+    padding: 1.5rem 1rem;
+    gap: 1rem;
+  }
+  .mission-image {
+    max-width: 100%;
+  }
+  .mission-image img {
+    max-height: 200px;
+  }
+
+  .team {
+    padding: 2rem 1rem;
+  }
+  .team h2 {
+    font-size: 28px;
+    margin-bottom: 1.5rem;
+  }
   .team-member {
     flex: 1 1 100%;
     max-width: 280px;
+    padding: 0.8rem;
+  }
+  .team-member img {
+    width: 80px;
+    height: 80px;
+  }
+  .team-member h3 {
+    font-size: 18px;
   }
 
+  .contact-form-section {
+    padding: 1.5rem 1rem;
+    gap: 1.5rem;
+  }
   .contact-info h2 {
-    font-size: 24px;
+    font-size: 22px;
+  }
+  .contact-info p {
+    font-size: 16px;
+  }
+
+  .page-hero {
+    padding: 40px 1rem 2rem;
+  }
+  .page-hero h1 {
+    font-size: 28px;
+  }
+  .page-hero p {
+    font-size: 17px;
   }
 
   .pricing-plans h2,
